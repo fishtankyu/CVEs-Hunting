@@ -59,3 +59,4 @@ Release notes: https://www.bookstackapp.com/blog/bookstack-release-v26-09-3/
 
 The maintainer (Dan Brown, lead maintainer of BookStack) confirmed the report valid on 7 Nov 2026 and asked the reporter to raise the CVE, on condition the details were not made public until the patch release was public. Screenshot of that correspondence:
 
+<img width="938" height="364" alt="image" src="https://github.com/user-attachments/assets/cb0304de-bc32-4fdd-a291-7c6510ca9512" />
