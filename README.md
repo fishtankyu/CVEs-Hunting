@@ -6,8 +6,8 @@
 - **CWE:** CWE-863 Incorrect Authorization
 - **CVSS 3.1 (estimate):** 5.4 Medium — `CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N`
   (Estimate by the reporter; same score as the sibling CVE-2026-116020, which was CVSS 5.4.)
-- **CVE ID:** Requested from VulnCheck (pending assignment)
-- **Status:** Reported privately 30 Oct 2026 · Confirmed valid by the maintainer 7 Nov 2026 · Fixed in 26.09.3, released 11 Nov 2026
+- **CVE ID:** CVE-2026-126811 (assigned by VulnCheck, published 11 Nov 2026; the published record lists CVSS 5.3)
+- **Status:** Reported privately 30 Oct 2026 · Confirmed valid by the maintainer 7 Nov 2026 · Fixed in 26.09.3, released 11 Nov 2026 · CVE-2026-126811 assigned by VulnCheck, published 11 Nov 2026
 
 ## Summary
 
@@ -59,4 +59,23 @@ Release notes: https://www.bookstackapp.com/blog/bookstack-release-v26-09-3/
 
 The maintainer (Dan Brown, lead maintainer of BookStack) confirmed the report valid on 7 Nov 2026 and asked the reporter to raise the CVE, on condition the details were not made public until the patch release was public. Screenshot of that correspondence:
 
-<img width="938" height="364" alt="image" src="https://github.com/user-attachments/assets/cb0304de-bc32-4fdd-a291-7c6510ca9512" />
+<img width="817" height="343" alt="image" src="https://github.com/user-attachments/assets/817b5cd2-5dc6-4b6b-8268-1461171130bb" />
+
+## Disclosure timeline
+
+- 30 Oct 2026 — Private report sent to the BookStack maintainer.
+- 7 Nov 2026 — Maintainer confirms the issue is valid, says a patch is prepared (addressing a similar issue from another researcher, with further test coverage specific to this scenario), to ship in the next security patch release; reporter to be attributed. Maintainer asks the reporter to raise the CVE, with details held until the patch release is public.
+- 11 Nov 2026 — BookStack v26.09.3 security release published, fixing the issue; reporter credited by name in the release notes.
+- 12 Nov 2026 — This advisory published; CVE ID requested from VulnCheck. CVE-2026-126811 assigned and published by VulnCheck the same day (record covers draft-page images and drawings; the trashed-page case fixed in the same release was reported separately and is not part of this record).
+
+## References
+
+- BookStack Security Release v26.09.3: https://www.bookstackapp.com/blog/bookstack-release-v26-09-3/
+- Sibling issue: CVE-2026-116020 — BookStack before 26.09.2, incorrect authorization in AttachmentController for draft page attachments.
+
+## What this advisory does not claim
+
+- The trashed-page case fixed in the same 26.09.3 release was reported separately by another researcher and is not part of CVE-2026-126811.
+- No testing was done against any live or third-party instance.
+- v26.09.2 is not claimed as lab-proven affected; only the development commit was lab-tested.
+- No public proof-of-concept is included; reproduction above is from a local lab with test accounts only.
