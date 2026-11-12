@@ -6,7 +6,7 @@ Security advisories for vulnerabilities I have discovered and responsibly disclo
 
 | CVE ID | Product | Vulnerability | Severity | Published |
 |---|---|---|---|---|
-| [CVE-2026-126811](CVE-2026-126811/advisory.md) | BookStack (< 26.09.3) | Incorrect Authorization via Image and Drawio Endpoints | Medium (CVSS 5.3) | 11 Nov 2026 |
+| [CVE-2026-126811](CVE-2026-126811.md) | BookStack (< 26.09.3) | Incorrect Authorization via Image and Drawio Endpoints | Medium (CVSS 5.3) | 11 Nov 2026 |
 
 ## Process
 
